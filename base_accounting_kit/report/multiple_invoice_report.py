@@ -6,6 +6,7 @@ from odoo import models, api
 class ReportInvoiceMultiple(models.AbstractModel):
     _name = 'report.base_accounting_kit.report_multiple_invoice'
     _inherit = 'report.account.report_invoice'
+    _description = 'Report Multiple Invoice'
 
     @api.model
     def _get_report_values(self, docids, data=None):

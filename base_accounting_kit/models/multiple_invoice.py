@@ -6,6 +6,7 @@ class MultipleInvoice(models.Model):
     """Multiple Invoice Model"""
     _name = "multiple.invoice"
     _order = "sequence"
+    _description = 'Multiple Invoice'
 
     sequence = fields.Integer('Sequence No')
     copy_name = fields.Char('Invoice Copy Name')
